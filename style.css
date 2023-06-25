@@ -15,7 +15,7 @@
   p, h1, h2, h3, h4, h5, h6 {  /*Avoid text overflows*/
     overflow-wrap: break-word;
   }
-/* done resetting CSS - code from Josh Comeau*/
+/* done resetting CSS - code from Josh Comeau */
 
 .navigation {
     display:flex;
@@ -25,12 +25,16 @@
     color: #fff;
 }
 
-.logo{
+.logo{ 
     margin-left: 100px;
+}
+.logo img{
+    width: 100px;;
 }
 
 .menu{
     display: flex;
+    flex-wrap: wrap;
     gap: 25px;
     margin-right: 100px;
 }
