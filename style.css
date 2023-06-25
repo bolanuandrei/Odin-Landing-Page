@@ -1,0 +1,45 @@
+/* resetting CSS */
+*, *::before, *::after {
+    box-sizing: border-box;
+}   
+  * {
+    margin: 0;    /* Remove default margin*/
+  }
+  img, picture, video, canvas, svg {       /*Improve media defaults */
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {   /*Remove built-in form typography styles*/
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {  /*Avoid text overflows*/
+    overflow-wrap: break-word;
+  }
+/* done resetting CSS - code from Josh Comeau*/
+
+.navigation {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #182e4d;
+    color: #fff;
+}
+
+.logo{
+    margin-left: 100px;
+}
+
+.menu{
+    display: flex;
+    gap: 25px;
+    margin-right: 100px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li a{
+    color: #fff;
+    text-decoration: none;
+}
