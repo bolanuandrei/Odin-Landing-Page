@@ -17,6 +17,8 @@
   }
 /* done resetting CSS - code from Josh Comeau */
 
+    
+
 .navigation {
     display:flex;
     justify-content: space-between;
@@ -26,7 +28,7 @@
 }
 
 .logo{ 
-    margin-left: 100px;
+    margin-left: 150px;
 }
 .logo img{
     width: 100px;;
@@ -36,7 +38,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
-    margin-right: 100px;
+    margin-right: 150px;
 }
 
 ul {
@@ -46,4 +48,47 @@ ul {
 ul li a{
     color: #fff;
     text-decoration: none;
+}
+
+.container_header{
+    background: #182e4d;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 0px 150px 0px 150px;
+    padding-bottom: 50px;
+}
+
+@media screen and (max-width: 800px){
+    .header {
+       flex-wrap: wrap;
+    }
+}
+
+.box1 { 
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #f9faf8;
+    font-size: 48px;;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+p {
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+button {
+    margin-top: 15px; 
+    background-color: #3882F6;
+    border-radius: 10px;
+    padding: 5px 15px;
+    color: #f9faf8
 }
