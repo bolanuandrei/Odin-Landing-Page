@@ -45,12 +45,30 @@ ul {
     list-style-type: none;
 }
 
-ul li a{
+nav ul li{
+    width: 12em;
+    height: 3em;
+    line-height: 3em;
+    border: 0.1em solid rgb(255, 255, 255);
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+nav ul li a{
     color: #fff;
     text-decoration: none;
 }
 
-.container_header{
+ul li a:hover {
+    border-bottom: 1px #0d9700;
+    border-bottom-style: solid; 
+    padding-bottom: 3px;
+}
+
+.container_header {
     background: #1F2937;
 }
 
@@ -61,6 +79,15 @@ ul li a{
     flex-wrap: nowrap;
     margin: 0px 150px 0px 150px;
     padding-bottom: 50px;
+}
+
+.container_body {
+    background: #E5E7EB;
+    transition: background-color 0.3s ease-in-out 150ms
+}
+
+.container_body:hover {
+    background-color: white;
 }
 
 @media screen and (max-width: 800px){
@@ -85,11 +112,22 @@ p {
 button {
     margin-top: 15px; 
     width: 130px;
-    background-color: #3882F6;
-    border-radius: 10px;
-    border-color: white;
-    padding: 5px 15px;
-    color: #f9faf8;
+    border:none;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: #229100;
+    font-weight: bold;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+button:hover {
+    opacity: 1
+}
+
+.box1 p {
+    color: white;
 }
 
 h2 {
@@ -97,7 +135,7 @@ h2 {
     font-weight: bold;
     color: #1F2937;
     text-align: center;
-    padding: 20px 0px; 
+    padding: 20px 0px 1px 0px; 
 }
 
 .boxes {
@@ -121,11 +159,12 @@ p {
 }
 
 .testimonial_section {
-    background: #E5E7EB;
+    background: white;
     height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 1px solid #0d9700;
 }
 
 .testimonial {
